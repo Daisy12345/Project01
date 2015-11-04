@@ -8,13 +8,17 @@
   <%= csrf_meta_tags %>
 </head>
 
+
 <body>
 <%= render :partial => 'layouts/header' %>
 <div class="space">
 <%= yield %>
+
+<div>
 <div class="image">
 <%= image_tag("http://www.techzoo.org/wp-content/uploads/2012/10/online-bank-management-project-java-jsp.jpeg") %>
-</div>
+<%= image_tag("http://www.techzoo.org/wp-content/uploads/2012/10/online-bank-management-project-java-jsp.jpeg") %>
+
 </div>
 <%= render :partial => 'layouts/footer' %>
 </body>

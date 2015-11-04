@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'bcrypt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -46,7 +45,6 @@ group :development do
   gem 'spring'
 end
 
-
 group :development do
   gem 'pry-rails'
   gem 'pry-stack_explorer'
@@ -58,5 +56,4 @@ group :development do
 end 
 
 gem 'rails_12factor', group: :production
-
 ruby "2.2.3"
