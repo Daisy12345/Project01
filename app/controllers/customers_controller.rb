@@ -9,8 +9,6 @@ class CustomersController < ApplicationController
 
   def accounts
     set_customer
-    @branches = Branch.all
-    @customers = Customer.all
     @accounts = Account.all
   end  
 

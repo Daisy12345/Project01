@@ -20,10 +20,16 @@
     <%= f.text_field :balance %>
   </div>
   <div class="field">
-    <%= f.label :branch_Id%><br>
-    <%= f.text_field :branch_id %>
+    <%= f.label :branch_id%><br>
+    <%= select_tag "account[branch_id]", options_from_collection_for_select(@branches, "id", "branch_name"), include_blank: true %>
+  </div>
+  <div class="field">
+    <%= f.label :customer_id%><br>
+    <%= select_tag "account[customer_id]", options_from_collection_for_select(@customers, "id", "customer_name"), include_blank: true  %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+

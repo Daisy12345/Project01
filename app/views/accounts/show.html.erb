@@ -11,8 +11,14 @@
 </p>
 
 <p>
-  <strong>Branch Id:</strong>
-  <%= @account.branch_id %>
+  <strong>Branch Name:</strong>
+  <%= @branch.branch_name %>
 </p>
+
+<p>
+  <strong>Customer Name:</strong>
+  <%= @customer.customer_name %>
+</p>
+
 <%= link_to 'Edit', edit_account_path(@account) %> |
 <%= link_to 'Back', accounts_path %>

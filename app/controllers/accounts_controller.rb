@@ -2,23 +2,27 @@ class AccountsController < ApplicationController
 before_action :set_account, only: [:show, :edit, :update, :destroy]
 
   def index
+    @accounts = Account.all
+
   	@branches = Branch.all
   	@customers = Customer.all
-    @accounts = Account.all
-  end
-
-  def display
-  	@branch = Branch.where(:branch.account[customer_id] => @branch.customer_id)
+    
   end
 
   def show
+    @branch = Branch.find(@account.branch_id)
+    @customer = Customer.find(@account.customer_id)
   end
 
   def new
     @account = Account.new
+    @customers = Customer.all
+    @branches = Branch.all
   end
 
   def edit
+    @customers = Customer.all
+    @branches = Branch.all
   end
 
   def create
@@ -61,6 +65,6 @@ before_action :set_account, only: [:show, :edit, :update, :destroy]
     end
 
     def account_params
-      params.require(:account).permit(:account_number, :balance)
+      params.require(:account).permit(:account_number, :balance, :branch_id, :customer_id)
     end
 end

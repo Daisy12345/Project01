@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   get '/branches/:id/customers' => 'branches#customers', as: :customers_branch
   get '/customers/:id/accounts' => 'customers#accounts', as: :accounts_customer
 
-
 #resources
   resources :customers
   resources :branches

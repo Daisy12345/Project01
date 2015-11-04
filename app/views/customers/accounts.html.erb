@@ -1,9 +1,9 @@
-<h3>Accounts of  <%= @customer.customer_name %></h3>
+<!-- <h3>Accounts of  <%= @customer.customer_name %></h3> -->
 
-	<% @branches.each do |branch| %>
-	 		<% if branch.branch_city == @customer.customer_city %>
- 				<%= branch.branch_name %><br>		
- 			<% end %>
+	<% @accounts.each do |account| %>
+	 	<% if @customer.id == account.customer_id %>
+ 			<%= account.customer_id %><br>		
+ 		<% end %>
 	<% end %>
 	
 <br>
