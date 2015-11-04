@@ -1,0 +1,10 @@
+<h3>Accounts of  <%= @customer.customer_name %></h3>
+
+	<% @branches.each do |branch| %>
+	 		<% if branch.branch_city == @customer.customer_city %>
+ 				<%= branch.branch_name %><br>		
+ 			<% end %>
+	<% end %>
+	
+<br>
+<%= link_to 'Back', customer_path %>

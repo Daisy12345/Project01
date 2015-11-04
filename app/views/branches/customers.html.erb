@@ -1,0 +1,21 @@
+
+<h3>Customers of  <%= @branch.branch_city %></h3>
+<table>
+  <thead>
+    <tr>
+      <th>Customer name</th>
+      <th>Branch name</th>
+    </tr>
+  </thead>
+  <tbody>
+	<% @customers.each do |customer| %>
+ 		<% if @branch.branch_city == customer.customer_city %>
+ 		<tr>
+ 		<td><%= customer.customer_name %></td>
+ 		<td><%= @branch.branch_name %></td>
+ 		<tr>
+ 		<% end %>
+	<% end %>
+  </tbody>
+</table>
+<%= link_to 'Back', branch_path %>

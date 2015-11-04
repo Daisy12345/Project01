@@ -1,0 +1,9 @@
+<h1>Sign Up to Bank!</h1>
+<%= form_for(:user, url: '/users') do |f| %>
+Name: <span class="tab"><%= f.text_field :name %></span><br>
+Email: <span class="tab1"><%= f.text_field :email %></span><br>
+Password: <span class="tab2"><%= f.password_field :password %></span><br>
+Password Confirmation: <%= f.password_field :password_confirmation %><br>
+<br>
+<%= f.submit "Sign Up" %>
+<% end %>
