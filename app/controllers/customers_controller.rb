@@ -9,6 +9,7 @@ class CustomersController < ApplicationController
 
   def accounts
     set_customer
+    @customers = Customer.all
     @accounts = Account.all
   end  
 
