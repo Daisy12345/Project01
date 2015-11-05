@@ -9,7 +9,7 @@ body {
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 18px;  
 }
 
 header {
@@ -23,59 +23,75 @@ header p {
     line-height: 50px;
 }
 
-
-
-.space{
-  min-height: 230px;
+.space {
+  min-height: 500px;
 }
 
-.main_container{
+.main_container {
 	min-height: 50px;
 	margin-top:10px;
-	margin-left:30px;
-  margin-right: 5px;
+	margin-left:10px;
+  margin-right: 1px;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.image{
+.image {
   display: inline-block;
-  float:right;
-  margin-top:10px;
+  position: absolute;
+  right: 0px;
+  margin-top:8px;
 }
 
-.h2{
+.h2 {
   margin-top: 10px;
   text-align: center;
   font-size: 30px;
   font-weight: bold; 
 }
 
-.tab{
+.tab {
   margin-left: 113px;
 }
-span.tab1{
+
+.tab1 {
   margin-left: 115px;
 }
-span.tab2{
+
+.tab2 {
   margin-left: 89px;
 }
-span.tab3{
+
+.tab3 {
   margin-left: 26px;
 }
 
-h1{
-	padding: 0.3em 0.3em 0.5em 0.3em;
-	font-size: 20px;
+h1 {
+	padding: 0.3em 0.3em 0.5em 0em;
+	font-size: 18px;
 }
 
-th{
+th {
 	color:blue;
-  padding: 0.3em;
+  padding: 0.3em 0.3em 0.3em 0em;
 }
 
-td{
-  padding: 0.3em;
+td {
+  padding: 0.3em 0.3em 0.3em 0em;
+}
+
+li.error {
+  color:red;
+}
+
+tab {
+  margin-left: 10px;
+}
+
+.img {
+max-height: 100px;
+max-width:  100px;
+
 }
 
 footer {
@@ -83,12 +99,12 @@ footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
- 
+  height: 50px;
 }
 
-footer p {
-    line-height: 50px;
+footer p{
+  margin-top: 18px;
 }

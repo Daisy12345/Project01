@@ -1,20 +1,20 @@
 class BranchesController < ApplicationController
   before_action :set_branch, only: [:show, :edit, :update, :destroy]
 
-  # GET /branches
-  # GET /branches.json
   def index
     authorize
     @branches = Branch.all
   end
   
+  def home
+
+  end
+
   def customers
     set_branch
     @customers = Customer.all
   end
 
-  # GET /branches/1
-  # GET /branches/1.json
   def show
   end
 

@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-  get '/' => 'branches#home'
+  get '/' => 'users#new'
   get '/home' => 'branches#home'
   
 end

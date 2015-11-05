@@ -4,7 +4,12 @@ class CustomersController < ApplicationController
   # GET /customers
   # GET /customers.json
   def index
+    authorize
     @customers = Customer.all
+  end
+
+  def home
+
   end
 
   def accounts

@@ -1,5 +1,4 @@
 <h3>Accounts of <%= @customer.customer_name %></h3>
-
 <% @accounts.each do |account| %>
 	<% if @customer.customer_name == @customers.find(account.customer_id).customer_name %>
  		<%= account.account_number %><br>

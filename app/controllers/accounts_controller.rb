@@ -2,10 +2,15 @@ class AccountsController < ApplicationController
 before_action :set_account, only: [:show, :edit, :update, :destroy]
 
   def index
+    authorize
     @accounts = Account.all
   	@branches = Branch.all
   	@customers = Customer.all
-    
+  end
+
+  def home
+    @branches = Branch.all
+    @accounts = Account.all
   end
 
   def show
