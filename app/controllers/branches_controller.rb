@@ -13,6 +13,7 @@ class BranchesController < ApplicationController
   def customers
     set_branch
     @customers = Customer.all
+    @accounts = Account.all
   end
 
   def show
