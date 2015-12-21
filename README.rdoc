@@ -32,6 +32,7 @@ Create a database called bank in rails
 Crate a table for individual Branch and Customer
 Generate a model called account references both branches and customers
 Did some queries to get data one from another table
+Deployed in heroku app
 
 
 
