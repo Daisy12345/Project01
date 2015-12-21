@@ -1,6 +1,6 @@
-Banking
+###Banking
 
-Description
+###Description
 
 This is Project01 for my GA Web Development Immersive course. The task was to create and host a website using the Ruby on Rails with a Postgresql database.
 
@@ -8,7 +8,7 @@ The key thing of a project is to make a relations with models in the database an
 
 Banking is the most reliable example for Relational Database Management System.(RDBMS)
 
-Tech Used
+###Tech Used
 
 Ruby
 Rails
@@ -16,7 +16,7 @@ Postgresql
 HTML
 CSS
 
-Instructions and Requirements
+###Instructions and Requirements
 
 Have at least 2 models
 Include sign up/log in functionality
@@ -24,7 +24,7 @@ Create a database table structure
 Semantically clean HTML and CSS
 Be deployed online
 
-Approach
+###Approach
 
 I used this project to increase my knowledge of the Rails system and how all the parts work together and any other web development I've done before.
 
